@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario del asistente</title>
+    <link href="form.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="wave">
+        <header>
+            <img class="logo" src="/img/Logo.png"/>
+        </header> 
+        <section class="container">
+            <h2>Formulario del asistente</h2>
+            <form action="#">
+                <p class="seo">En SEonthebeach exigimos a nuestros ponentes que el nivel técnico de sus ponencias sea lo más alto posible. Por eso <strong>traemos a los mejores con temas de máxima actualidad en el sector.</strong></p>
+                <hr>
+                <section>
+                    <div class="user">
+                        <div class="one">
+                            <legend><strong>Nombre</strong></legend>
+                            <input type="text" name="name" placeholder="Escribe aquí..." required>
+                        </div>
+                        <div class="two">
+                            <legend><strong>Apellidos</strong></legend>
+                            <input type="text" name="lastname" placeholder="Escribe aquí..." required></input>
+                        </div>
+                        <div class="three">
+                            <legend><strong>Email</strong></legend>
+                            <input type="text" name="email" placeholder="Ejemplo:mdo@.." required></input>
+                        </div>
+                        <div class="four">
+                            <legend><strong>Empresa</strong></legend>
+                                <input type="text" name="company" placeholder="Escribe aquí..." required></input>
+                        </div class="five">
+                             <legend><strong>Web</strong></legend>
+                                <input type="text" name="web" placeholder="Escribe aquí..."></input required>
+                    </div>
+                </section>
+                <section class="allergic">
+                    <legend><strong>¿Tienes alguna intolerancia o alegia?</strong></legend>
+                    <input id="no" type="radio" name="allergic" value="no" > <label for="no">No, puedo comer de todo.</label>
+                    <label><input id="si" type="radio" name="allergic" value="si" checked> Si, tengo algun tipo de alergia.</label>
+                </section>
+                <section class="food">
+                    <legend><strong>Indica a que alimentos tienes alergia o intolerancia</strong></legend>
+                    <input type="text" class="food" name="food" placeholder="Escribe aquí..." >
+                </section>
+                <section class="submit">
+                    <button type="submit">Enviar formulario</button>
+                </section>
+               
+                <section class="accept">
+                    <div id="uno">
+                        <input id="first" type="radio" name="submit" value="first" > <label for="first">Al completar cualquier formulario o realizar una compra en nuestro sitio web, usted garantiza que toda la información proporcionada es precisa, completa y actualizada. Usted es...</label>
+                    </div>
+                    <div id="dos">
+                        <input id="second" type="radio" name="submit" value="second" > <label for="second">Acepto recibir publicidad y notificaciones sobre Se..</label>
+                    </div>
+                    
+
+                </section>
+                
+            </form>
+        </section>
+
+
+    </div>
+</body>
+</html>
