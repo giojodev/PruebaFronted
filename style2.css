@@ -1,5 +1,5 @@
 *{/*Considerando que todo el html contiene la misma fuente se usa selector universal*/
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1{
     margin-left: 10px;
