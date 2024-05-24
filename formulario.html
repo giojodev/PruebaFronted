@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario del asistente</title>
     <link href="form.css" rel="stylesheet"/>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 <body>
     <div class="wave">
@@ -35,17 +36,27 @@
                                 <input class="inputForm" type="text" name="company" placeholder="Escribe aquí..." required></input>
                         </div>                             
                     </div>
-                    <div class="user">
+                    
                     <div class="columnaWeb">
                         <legend><strong>Web</strong></legend>
                                     <input class="inputFormWeb" type="text" name="web" placeholder="Escribe aquí..."></input required>
                     </div>
-                    </div>
+                    
                 </section>
                 <section class="allergic">
                     <legend><strong>¿Tienes alguna intolerancia o alegia?</strong></legend>
-                    <input id="no" type="radio" name="allergic" value="no" > <label for="no">No, puedo comer de todo.</label>
-                    <label><input id="si" type="radio" name="allergic" value="si" checked> Si, tengo algun tipo de alergia.</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="rdSi">
+                        <label class="labelRadio" for="flexRadioDefault1">
+                         No, Puedo Comer de todo 
+                        </label>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="rdNo" checked>
+                        <label class="labelRadio" for="flexRadioDefault2">
+                          Si, tengo algún tipo de alergía o intolerancia.
+                        </label>
+                      </div>
+                     
+                    
                 </section>
                 <section class="food">
                     <legend><strong>Indica a que alimentos tienes alergia o intolerancia</strong></legend>
@@ -56,12 +67,22 @@
                 </section>
                
                 <section class="accept">
-                    <div id="uno">
-                        <input id="first" type="radio" name="submit" value="first" > <label for="first">Al completar cualquier formulario o realizar una compra en nuestro sitio web, usted garantiza que toda la información proporcionada es precisa, completa y actualizada. Usted es...</label>
-                    </div>
-                    <div id="dos">
-                        <input id="second" type="radio" name="submit" value="second" > <label for="second">Acepto recibir publicidad y notificaciones sobre Se..</label>
-                    </div>
+                    <div class="form-check2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="rdAcepto">
+                        <label class="form-check-label labelRadio2" for="flexRadioDefault3">
+                            Al completar cualquier formulario o realizar una compra en nuestro sitio web, usted garantiza que toda la información proporcionada es precisa, completa y actualizada. Usted es...
+                        </label><br>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="rdNoAcepto" checked>
+                        <label class="form-check-label labelRadio2" for="flexRadioDefault4">
+                            Acepto recibir publicidad y notificaciones sobre Se..
+                            
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        
+                      </div>
+                   
+                   
                     
 
                 </section>
